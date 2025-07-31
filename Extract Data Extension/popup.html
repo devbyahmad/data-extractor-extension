@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Email & Phone Extractor</title>
+  <style>
+     * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      width: 320px;
+      background: #f8f9fa;
+      padding: 15px;
+    }
+
+    h1 {
+      font-size: 18px;
+      margin-bottom: 10px;
+      color: #333;
+      text-align: center;
+    }
+
+    .output-box {
+      width: 100%;
+      height: 160px;
+      padding: 10px;
+      resize: none;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      background-color: #fff;
+      font-size: 13px;
+      color: #333;
+      margin-bottom: 12px;
+    }
+
+    .btn {
+      width: 100%;
+      padding: 10px;
+      background: #0066ff;
+      border: none;
+      color: white;
+      font-weight: bold;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #004ed4;
+    }
+
+    footer {
+      margin-top: 10px;
+      text-align: center;
+      font-size: 11px;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+   <h1>Email and Phone Extractor</h1>
+  <textarea id="output" class="output-box" readonly placeholder="Click 'Extract' to get data from this page..."></textarea>
+  <button class="btn" id="extractBtn">Extract Now</button>
+  <footer>Developed by Ahmad</footer>
+  <script src="popup.js"></script>
+</body>
+</html>
